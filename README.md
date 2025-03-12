@@ -48,3 +48,7 @@ Videos are available at [assets](https://github.com/testdummyvt/diffsynth-wan-ca
 |---|---|---|---|
 | 227.14 sec | 200.35 sec (1.13X) | 167.06 sec (1.36X) | 80.41 sec (Not usable) |
 Videos are available at [assets](https://github.com/testdummyvt/diffsynth-wan-cache/tree/refs/heads/main/assets).
+
+## Wan 2.1 I2V 14B (480P)
+
+I was not able to run it on my setup. Need testing.

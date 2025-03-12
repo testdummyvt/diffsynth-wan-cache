@@ -59,7 +59,7 @@ def fbcache_forward(self,
             mean_diff = torch.mean(torch.abs(cache - current_block))
             mean_x = torch.mean(torch.abs(cache))
             diff = mean_diff / mean_x
-            print(diff.item())
+            # print(diff.item())
             return diff.item() < threshold
 
         for b_id, block in enumerate(self.blocks):
@@ -91,7 +91,7 @@ def fbcache_forward(self,
                         else:
                             apply_fbcache = check_current_cache_block_similarity(self.first_block_cache, x, self.fb_cache_thr)
                             if apply_fbcache:
-                                print("Applying FB Cache")
+                                # print("Applying FB Cache")
                                 return self.last_block_cache
                             else:
                                 self.first_block_cache = x
@@ -100,7 +100,7 @@ def fbcache_forward(self,
 
         x = self.head(x, t)
         x = self.unpatchify(x, (f, h, w))
-        
+
         if self.enable_fbcache:
             self.last_block_cache = x
         return x
