@@ -9,6 +9,10 @@ Follow installation instructions from [DiffSynth-Studio](https://github.com/mode
 # Usage
 
 ```python
+
+https://github.com/user-attachments/assets/2c2e88de-a8c1-48bd-a85c-80f8ccf858b8
+
+
 from fbcache import fbcache_forward
 # ...
 # load models and initialize the pipeline
@@ -41,6 +45,12 @@ For Wan2.1 I2V 1.3B, I found that the threshold is `0.03` or `0.04` works well.
 | 1216.17 sec | 1090.77 sec (1.11X) | 657.64 sec (1.85X) | 359.47 sec (Not usable) |
 Videos are available at [assets](https://github.com/testdummyvt/diffsynth-wan-cache/tree/refs/heads/main/assets).
 
+### No FBCache result
+https://github.com/user-attachments/assets/c9ca618b-9295-496a-a10b-be6f4655f963
+
+### 0.07 FBCache result
+https://github.com/user-attachments/assets/08937e38-9bce-47fd-b330-95ac4bf348d5
+
 
 ## Wan 2.1 I2V 1.3B
 
@@ -48,6 +58,14 @@ Videos are available at [assets](https://github.com/testdummyvt/diffsynth-wan-ca
 |---|---|---|---|
 | 227.14 sec | 200.35 sec (1.13X) | 167.06 sec (1.36X) | 80.41 sec (Not usable) |
 Videos are available at [assets](https://github.com/testdummyvt/diffsynth-wan-cache/tree/refs/heads/main/assets).
+
+### No FBCache result
+https://github.com/user-attachments/assets/01f40a3f-3ebd-4091-a0d5-00859b3e6df8
+
+### 0.04 FBCache result
+https://github.com/user-attachments/assets/25bd8bc2-37b6-4648-b92c-8f904d77fed6
+
+
 
 ## Wan 2.1 I2V 14B (480P)
 
