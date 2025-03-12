@@ -16,22 +16,22 @@ if __name__ == "__main__":
     # Load models
     model_manager = ModelManager(device="cpu")
     model_manager.load_models(
-        ["models/Wan-AI/Wan2.1-I2V-14B-480P/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth"],
+        ["/home/ubuntu/models/Wan2.1-I2V-14B-480P/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth"],
         torch_dtype=torch.float32, # Image Encoder is loaded with float32
     )
     model_manager.load_models(
         [
             [
-                "models/Wan-AI/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00001-of-00007.safetensors",
-                "models/Wan-AI/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00002-of-00007.safetensors",
-                "models/Wan-AI/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00003-of-00007.safetensors",
-                "models/Wan-AI/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00004-of-00007.safetensors",
-                "models/Wan-AI/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00005-of-00007.safetensors",
-                "models/Wan-AI/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00006-of-00007.safetensors",
-                "models/Wan-AI/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00007-of-00007.safetensors",
+                "/home/ubuntu/models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00001-of-00007.safetensors",
+                "/home/ubuntu/models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00002-of-00007.safetensors",
+                "/home/ubuntu/models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00003-of-00007.safetensors",
+                "/home/ubuntu/models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00004-of-00007.safetensors",
+                "/home/ubuntu/models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00005-of-00007.safetensors",
+                "/home/ubuntu/models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00006-of-00007.safetensors",
+                "/home/ubuntu/models/Wan2.1-I2V-14B-480P/diffusion_pytorch_model-00007-of-00007.safetensors",
             ],
-            "models/Wan-AI/Wan2.1-I2V-14B-480P/models_t5_umt5-xxl-enc-bf16.pth",
-            "models/Wan-AI/Wan2.1-I2V-14B-480P/Wan2.1_VAE.pth",
+            "/home/ubuntu/models/Wan2.1-I2V-14B-480P/models_t5_umt5-xxl-enc-bf16.pth",
+            "/home/ubuntu/models/Wan2.1-I2V-14B-480P/Wan2.1_VAE.pth",
         ],
         torch_dtype=torch.bfloat16, # You can set `torch_dtype=torch.float8_e4m3fn` to enable FP8 quantization.
     )
@@ -41,10 +41,10 @@ if __name__ == "__main__":
     # Download example image
     dataset_snapshot_download(
         dataset_id="DiffSynth-Studio/examples_in_diffsynth",
-        local_dir="~/",
+        local_dir="/home/ubuntu/",
         allow_file_pattern=f"data/examples/wan/input_image.jpg"
     )
-    image = Image.open("data/examples/wan/input_image.jpg")
+    image = Image.open("/home/ubuntu/data/examples/wan/input_image.jpg")
 
     fb_cache_thr = 0.06
     #Add FB cache to the pipeline
