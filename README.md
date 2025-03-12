@@ -40,7 +40,7 @@ For Wan2.1 I2V 1.3B, I found that the threshold is `0.03` or `0.04` works well.
 
 ## Wan 2.1 T2V 14B
 
-| No FBCache | 0.04 FBCache | 0.06 FBCache | 0.09 FBCache |
+| No FBCache | 0.04 FBCache | 0.07 FBCache | 0.09 FBCache |
 |---|---|---|---|
 | 1216.17 sec | 1090.77 sec (1.11X) | 657.64 sec (1.85X) | 359.47 sec (Not usable) |
 Videos are available at [assets](https://github.com/testdummyvt/diffsynth-wan-cache/tree/refs/heads/main/assets).
