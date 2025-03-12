@@ -38,13 +38,13 @@ For Wan2.1 I2V 1.3B, I found that the threshold is `0.03` or `0.04` works well.
 
 | No FBCache | 0.04 FBCache | 0.06 FBCache | 0.09 FBCache |
 |---|---|---|---|
-| <video src="https://github.com/testdummyvt/diffsynth-wan-cache/raw/refs/heads/main/assets/Wan2.1-T2V-14B__fbcache_0.00__1216.17.mp4" width="100%"></video> | <video src="https://github.com/testdummyvt/diffsynth-wan-cache/raw/refs/heads/main/assets/Wan2.1-T2V-14B__fbcache_0.04__1090.77.mp4" width="100%"></video> | <video src="https://github.com/testdummyvt/diffsynth-wan-cache/raw/refs/heads/main/assets/Wan2.1-T2V-14B__fbcache_0.07__657.64.mp4" width="100%"></video> | <video src="https://github.com/testdummyvt/diffsynth-wan-cache/raw/refs/heads/main/assets/Wan2.1-T2V-14B__fbcache_0.09__359.47.mp4" width="100%"></video> |
 | 1216.17 sec | 1090.77 sec (1.11X) | 657.64 sec (1.85X) | 359.47 sec (Not usable) |
+Videos are available at [assets](https://github.com/testdummyvt/diffsynth-wan-cache/tree/refs/heads/main/assets).
 
 
 ## Wan 2.1 I2V 1.3B
 
 | No FBCache | 0.03 FBCache | 0.04 FBCache | 0.06 FBCache |
 |---|---|---|---|
-| <video src="https://github.com/testdummyvt/diffsynth-wan-cache/raw/refs/heads/main/https://github.com/testdummyvt/diffsynth-wan-cache/raw/refs/heads/main/assets/Wan2.1-T2V-1.3B__fbcache_0.00__227.14.mp4" width="100%"></video> | <video src="https://github.com/testdummyvt/diffsynth-wan-cache/raw/refs/heads/main/assets/Wan2.1-T2V-1.3B__fbcache_0.03__200.35.mp4" width="100%"></video> | <video src="https://github.com/testdummyvt/diffsynth-wan-cache/raw/refs/heads/main/assets/Wan2.1-T2V-1.3B__fbcache_0.04__167.06.mp4" width="100%"></video> | <video src="https://github.com/testdummyvt/diffsynth-wan-cache/raw/refs/heads/main/assets/Wan2.1-T2V-1.3B__fbcache_0.06__80.41.mp4" width="100%"></video> |
 | 227.14 sec | 200.35 sec (1.13X) | 167.06 sec (1.36X) | 80.41 sec (Not usable) |
+Videos are available at [assets](https://github.com/testdummyvt/diffsynth-wan-cache/tree/refs/heads/main/assets).
