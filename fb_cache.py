@@ -108,7 +108,7 @@ if __name__ == "__main__":
     pipe = WanVideoPipeline.from_model_manager(model_manager, torch_dtype=torch.bfloat16, device="cuda")
     pipe.enable_vram_management(num_persistent_param_in_dit=None) # You can set `num_persistent_param_in_dit` to a small number to reduce VRAM required.
 
-    for fb_cache_thr in [0.06, 0.07]:
+    for fb_cache_thr in [0.09]:
         #Add FB cache to the pipeline
         enable_fbcache = False
         if fb_cache_thr > 0:
